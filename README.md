@@ -2,13 +2,9 @@
 
 A self-hostable, multimodal chat application that runs open-source models locally. Chat with **text, images, PDFs, and voice** in one interface, powered by local models via **Ollama** (with an optional **OpenAI API** fallback), retrieval-augmented generation over your own PDFs, and speech-to-text with **Whisper**.
 
-[![tests](https://github.com/Leon-Sander/Local-Multimodal-AI-Chat/actions/workflows/tests.yml/badge.svg)](https://github.com/Leon-Sander/Local-Multimodal-AI-Chat/actions/workflows/tests.yml)
-[![Stars](https://img.shields.io/github/stars/Leon-Sander/Local-Multimodal-AI-Chat?style=flat)](https://github.com/Leon-Sander/Local-Multimodal-AI-Chat/stargazers)
-[![Forks](https://img.shields.io/github/forks/Leon-Sander/Local-Multimodal-AI-Chat?style=flat)](https://github.com/Leon-Sander/Local-Multimodal-AI-Chat/forks)
+[![tests](https://github.com/vikaskumar-23/local-multimodal-ai-chat/actions/workflows/tests.yml/badge.svg)](https://github.com/vikaskumar-23/local-multimodal-ai-chat/actions/workflows/tests.yml)
 [![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE.md)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
-
-**Demo / setup walkthrough:** [YouTube video](https://youtu.be/eNwvAdem4vo)
 
 ## Overview
 
@@ -68,8 +64,6 @@ All Python source lives under `src/`.
 Python · Streamlit · Ollama · OpenAI API · LangChain · Chroma · Whisper (Transformers) · SQLite · Docker
 
 ## Getting Started
-
-You can also follow the [setup video](https://youtu.be/eNwvAdem4vo) (Linux/Windows).
 
 First, copy the example environment file and add your key only if you plan to use the OpenAI endpoint:
 
@@ -150,18 +144,19 @@ CI runs the suite on Ubuntu and Windows. See [TESTING.md](./TESTING.md) for the 
 - **2024-08**: Docker Compose added.
 - **2024-02**: SQLite chat history; model caching; images/audio in history; config expansion; GPL-3.0 license.
 
-See [Releases](https://github.com/Leon-Sander/Local-Multimodal-AI-Chat/releases) for the full history.
+See [Releases](https://github.com/vikaskumar-23/local-multimodal-ai-chat/releases) for the full history.
 
 </details>
 
 ## Contributing
 
-Contributions are welcome: features, optimizations, or bug fixes. Please check existing [issues](https://github.com/Leon-Sander/Local-Multimodal-AI-Chat/issues) first.
+Contributions are welcome: features, optimizations, or bug fixes. Please check existing [issues](https://github.com/vikaskumar-23/local-multimodal-ai-chat/issues) first.
 
 ## License
 
 Licensed under the GNU GPL-3.0. See [LICENSE.md](./LICENSE.md).
 
-## Contact
+## Credits
 
-Built by Leon Sander. [GitHub](https://github.com/Leon-Sander) · [LinkedIn](https://www.linkedin.com/in/leon-sander-8292b7153/) · leonsander.consulting@gmail.com
+Originally created by Leon Sander and distributed under the GNU GPL-3.0; this
+repository is a modified version maintained by [@vikaskumar-23](https://github.com/vikaskumar-23).
