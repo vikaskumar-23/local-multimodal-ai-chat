@@ -2,10 +2,6 @@
 
 A self-hostable, multimodal chat application that runs open-source models locally. Chat with **text, images, PDFs, and voice** in one interface, powered by local models via **Ollama** (with an optional **OpenAI API** fallback), retrieval-augmented generation over your own PDFs, and speech-to-text with **Whisper**.
 
-[![tests](https://github.com/vikaskumar-23/local-multimodal-ai-chat/actions/workflows/tests.yml/badge.svg)](https://github.com/vikaskumar-23/local-multimodal-ai-chat/actions/workflows/tests.yml)
-[![License: GPL-3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)](./LICENSE.md)
-![Python](https://img.shields.io/badge/Python-3.10-blue)
-
 ## Overview
 
 Local Multimodal AI Chat integrates several AI models behind a single Streamlit interface, with a focus on **data privacy** (everything can run on your own machine) and **modularity** (each capability lives in its own handler).
@@ -126,37 +122,3 @@ Or run it inside the app container (no local Python setup, matches the CI enviro
 docker compose -f docker-compose_without_ollama.yml run --rm app sh -c "pip install --no-cache-dir -q pytest && pytest"
 ```
 
-CI runs the suite on Ubuntu and Windows. See [TESTING.md](./TESTING.md) for the philosophy and what is deliberately not tested.
-
-## Roadmap
-
-- [ ] Additional model providers (Gemini, others)
-- [ ] Image generation
-- [ ] Authentication
-- [ ] Theming
-
-<details>
-<summary>Changelog (highlights)</summary>
-
-- **2026-07** (v2.6.0): Contract-level test suite (21 tests) plus GitHub Actions CI on Ubuntu and Windows; moved all source into `src/` for a cleaner root. Breaking: run commands are now `streamlit run src/app.py`.
-- **2025-05** (v2.5.0): file upload via the chat bar.
-- **2024-09**: Model serving moved to the Ollama API; OpenAI API added.
-- **2024-08**: Docker Compose added.
-- **2024-02**: SQLite chat history; model caching; images/audio in history; config expansion; GPL-3.0 license.
-
-See [Releases](https://github.com/vikaskumar-23/local-multimodal-ai-chat/releases) for the full history.
-
-</details>
-
-## Contributing
-
-Contributions are welcome: features, optimizations, or bug fixes. Please check existing [issues](https://github.com/vikaskumar-23/local-multimodal-ai-chat/issues) first.
-
-## License
-
-Licensed under the GNU GPL-3.0. See [LICENSE.md](./LICENSE.md).
-
-## Credits
-
-Originally created by Leon Sander and distributed under the GNU GPL-3.0; this
-repository is a modified version maintained by [@vikaskumar-23](https://github.com/vikaskumar-23).
